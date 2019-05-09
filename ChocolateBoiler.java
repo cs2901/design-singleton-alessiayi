@@ -32,6 +32,10 @@ public class ChocolateBoiler {
     public static ChocolateBoiler getInstance(){
         if (instance==null){
             instance=new ChocolateBoiler();
+            System.out.print("Primera Instancia creada");
+        }
+        else{
+            System.out.print("Instancia ya existe");
         }
         return instance;
     }
@@ -44,3 +48,24 @@ public class ChocolateBoiler {
         return boiled;
     }
 }
+
+class MyThread implements Runnable {
+    Thread t;
+    MyThread (String thread){
+        name = threadname;
+        t = new Thread(this, "thread");
+        t.start();
+    }
+}
+
+public void run(){
+    ChocolateBoiler.getInstance();
+}
+public class Multithread{
+    public static void main(){
+        for (int i=0; i<10; i++){
+            new MyThread();
+        }
+    }
+}
+
