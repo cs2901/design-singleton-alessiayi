@@ -33,3 +33,9 @@ public class Singleton {
     }
     return instance;
 ```
+## TODO
+- Create a class diagram for current ChocolateBoiler
+- Create a class diagram for Singleton ChocolateBoiler
+- Improve ChocolateBoiler class by turning it into a Singleton
+.. - Everyone knows that all modern chocolate factories have computer controlled chocolate boilers. The job of the boiler is to take the chocolate and milk, bring them to a boil, and then pass them on to the next phase of making chocolate bars.  Probably suspect that if two ChocolateBoiler instances get loose, some very bad things can happen. How might things go wrong if more than one instance of ChocolateBoilder is created in an application?
+- Multithreading the creation of Singleton ChocolateBoiler
